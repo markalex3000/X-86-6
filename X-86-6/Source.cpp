@@ -18,17 +18,17 @@ inline void simple_error(string s)	// write ``error: s and exit program
 }
 
 int main() {
-	int val1{ 0 }, val2{ 0 }, val3{ 0 };
+	string val1{ 0 }, val2{ 0 }, val3{ 0 };
 	cout << "initial values: " << val1 << ", " << val2 << ", " << val3 << "\n";
 
-	cout << "please enter three integers separated by a space:  ";
+	cout << "please enter three white-space delimited strings:  ";
 	cin >> val1;
 	cin >> val2;
 	cin >> val3;
 
-	cout << "Raw Numbers: " << val1 << ", " << val2 << ", " << val3 << "\n";
+	cout << "Raw Strings: " << val1 << ", " << val2 << ", " << val3 << "\n";
 
-	int temp{ 0 };
+	string temp{  };
 	if (val1 > val2)	//compare the first two numbers - swap if in wrong order
 	{
 		temp = val2;
@@ -36,7 +36,7 @@ int main() {
 		val1 = temp;
 	}
 
-	cout << "Semi-Ordered Numbers: " << val1 << ", " << val2 << ", " << val3 << "\n";
+	cout << "Semi-Ordered Strings: " << val1 << ", " << val2 << ", " << val3 << "\n";
 	
 	if (val2 > val3)	//compare the second two numbers - swap if in wrong order
 	{
@@ -52,7 +52,7 @@ int main() {
 		val1 = temp;
 	}
 
-	cout << "Ordered Numbers: " << val1 << ", " << val2 << ", " << val3 << "\n";
+	cout << "Ordered Strings: " << val1 << ", " << val2 << ", " << val3 << "\n";
 
 	keep_window_open();
 	return 0;
